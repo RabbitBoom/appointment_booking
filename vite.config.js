@@ -3,18 +3,15 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-    /*server: {
+    server: {
         host: '0.0.0.0',
         proxy: {
             '^/api': {
-                target: 'https://chinamobao-8181.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/',
+                target: 'https://chinamobao-8181.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/api',
                 changeOrigin: true,
-                headers: {
-                    'Access-Control-Allow-Origin': '*',
-                }
             }
         }
-    },*/
+    },
     plugins: [react()],
     resolve: {
         alias: {

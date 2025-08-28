@@ -92,6 +92,12 @@ nav {
     font-weight: 500;
 }
 
+.link {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
 /* Styling for individual links in the navigation */
 .link a {
     color: #0d213f;
@@ -108,6 +114,7 @@ nav {
     nav {
         padding: 0 20px
     }
+
     .nav__logo {
         margin-right: auto;
     }
@@ -181,6 +188,7 @@ nav {
     align-items: center; /* Align items and justify content */
     justify-content: center; /* Align items and justify content */
     margin-top: 3px; /* Margin from top */
+    margin-left: 15px;
     white-space: nowrap;
 }
 

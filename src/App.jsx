@@ -6,6 +6,8 @@ import Navbar from 'components/Navbar/Navbar.jsx'
 import LandingPage from "components/Landing_Page/LandingPage.jsx";
 import Login from 'components/Login/Login.jsx'
 import SignUp from "components/Sign_Up/Sign_Up.jsx";
+import InstantConsultation from "components/InstantConsultationBooking/InstantConsultation.jsx";
+import FindDoctorSearch from "components/FindDoctorSearch/FindDoctorSearch.jsx";
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/signup" element={<SignUp/>}/>
                 <Route path="/" element={<LandingPage/>}/>
+                <Route path="/instant-consultation" element={<InstantConsultation />} />
+                <Route path="/findDoctorSearch" element={<FindDoctorSearch />} />
             </Routes>
         </BrowserRouter>
     )
