@@ -1,10 +1,12 @@
 /* Styles for the main container */
 .container {
-    max-width: 400px; /* Maximum width of the container */
+    max-width: 440px; /* Maximum width of the container */
     margin: 0 auto; /* Center the container horizontally */
     padding: 40px; /* Padding inside the container */
     margin-top: 10%; /* Top margin of 10% */
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Styles for form groups */
