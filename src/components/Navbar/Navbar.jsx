@@ -34,12 +34,14 @@ function Navbar() {
     }
 
     useEffect(() => {
-    sessionStorage.setItem('email', '12345@gmail.com');
-        const storedemail = sessionStorage.getItem("email");
+        sessionStorage.setItem('email', '12345@gmail.com');
+        sessionStorage.setItem('name', 'E Boy');
+        sessionStorage.setItem('phone', '123-123-1234');
+        const username = sessionStorage.getItem("name");
 
-        if (storedemail) {
+        if (username) {
             setIsLoggedIn(true);
-            setUsername(storedemail);
+            setUsername(username);
         }
 
         const clickFun = (e) => {
@@ -93,15 +95,25 @@ function Navbar() {
                     <Link to={'/'}>Home</Link>
                 </li>
                 <li className="link">
-                    <a href="#">Appointments</a>
+                    <Link to={'/appointments'}>Appointments</Link>
                 </li>
                 <li className="link">
-                    <a href="#">Reviews</a>
+                    <Link to={'/reviews'}>Reviews</Link>
                 </li>
                 {isLoggedIn?(
                     <>
                         <li className="link">
-                            <span>Welcome,{ username }</span>
+                            <div className='nav-userinfo'>
+                                <span>Welcome, { username }</span>
+                                <div className="nav-userinfo-drawdown">
+                                    <div className="nav-userinfo-drawdown-item">
+                                        <Link to={'/profile'}>Your Profile</Link>
+                                    </div>
+                                    <div className="nav-userinfo-drawdown-item">
+                                        <Link to={'/reports'}>Your Reports</Link>
+                                    </div>
+                                </div>
+                            </div>
                             <button className="btn2" onClick={handleLogout}>
                                 Logout
                             </button>

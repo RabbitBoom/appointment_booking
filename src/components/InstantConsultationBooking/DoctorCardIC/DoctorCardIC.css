@@ -12,44 +12,44 @@
   .cancel-appointment {
     background-color: red;
   }
-  
+
   .doctor-card-details-container {
     padding: 20px;
   }
-  
+
   .doctor-card-profile-image-container {
     text-align: center;
     margin-bottom: 10px;
   }
-  
+
   .doctor-card-profile-image-container img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
   }
-  
+
   .doctor-card-details {
     text-align: center;
   }
-  
+
   .doctor-card-detail-name {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
   }
-  
+
   .doctor-card-detail-speciality {
     font-size: 16px;
     margin-bottom: 5px;
   }
-  
+
   .doctor-card-detail-experience {
     font-size: 14px;
     color: #888;
     margin-bottom: 5px;
     font-weight: bold;
   }
-  
+
   .doctor-card-detail-location,
   .doctor-card-detail-clinic,
   .doctor-card-detail-consultationfees {
@@ -58,9 +58,9 @@
   }
   .doctor-card-detail-consultationfees{
     font-weight: bold;
-    
+
   }
-  
+
   .book-appoinment-btn {
     background-color: #3498db;
     color: #fff;
@@ -70,7 +70,7 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  
+
   .book-appoinment-btn div:nth-child(2) {
     font-size: 12px;
     font-weight: bold;
@@ -161,6 +161,7 @@ label {
 }
 
 input,
+select,
 textarea {
   width: 100%;
   padding: 12px;

@@ -196,3 +196,31 @@ nav {
     background-color: #0084ff; /* Hover effect */
     color: white; /* Hover effect */
 }
+
+.nav-userinfo {
+    position: relative;
+    z-index: 1;
+    height: 42px;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+.nav-userinfo-drawdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+    padding: 10px 20px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
+    background: #fff;
+}
+
+.nav-userinfo:hover .nav-userinfo-drawdown {
+    display: block;
+}
+
+.nav-userinfo-drawdown-item {
+    padding: 10px 20px;
+}
